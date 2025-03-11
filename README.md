@@ -1,58 +1,42 @@
-# 🎮 curate.fun Landing Page
+# 🎮 curate.fun landing page
 
-Welcome to the curate.FUN landing page repository! This is the official website for curate.fun, a platform that allows anyone to create feeds with set approvers that turn into different content sources.
+This is the official website for [curate.fun](https://curate.fun), a platform that allows anyone to create feeds with set approvers that turn into different content sources.
 
 ## ✨ Features
 
-- 🎨 Modern, responsive design
-- ⌨️ Animated typing effect
-- 🔍 SEO optimized
-- 🌐 Social media integration
-- 📚 Documentation links
+- Modern, responsive design
+- Animated typing effect
+- SEO optimized
+- Social media integration
 
 ## 🛠️ Tech Stack
 
-- ⚡ Next.js
-- ⚛️ React
-- 📝 TypeScript
-- 🎨 Tailwind CSS
-- ⚡ React Type Animation
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
 
 ## 🚀 Getting Started
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/potlock/curatedotfun.git
+   git clone https://github.com/potlock/curatedotfun-landing.git
    ```
 
-2. Install Bun:
+2. Install dependencies:
+
    ```bash
-   curl -fsSL https://bun.sh/install | bash && echo 'export PATH="$HOME/.bun/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+   npm install
    ```
 
-3. Install dependencies:
+3. Run the development server:
+
    ```bash
-   bun install
+   npm run dev
    ```
 
-4. Run the development server:
-   ```bash
-   bun run dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## 📝 Environment Variables
-
-Create a `.env.local` file in the root directory and add any required environment variables.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🔗 Links
 
