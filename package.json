@@ -12,6 +12,7 @@
     "fmt:check": "prettier --check '**/*.{js,jsx,ts,tsx,json}'"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.67.2",
     "autoprefixer": "^10.4.20",
     "lucide-react": "^0.474.0",
     "next": "14.1.0",

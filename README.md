@@ -1,6 +1,6 @@
 # 🎮 curate.fun Landing Page
 
-This is the official website for curate.fun, a platform that allows anyone to create feeds with set approvers that turn into different content sources.
+Welcome to the curate.FUN landing page repository! This is the official website for curate.fun, a platform that allows anyone to create feeds with set approvers that turn into different content sources.
 
 ## ✨ Features
 
@@ -21,30 +21,30 @@ This is the official website for curate.fun, a platform that allows anyone to cr
 ## 🚀 Getting Started
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/potlock/curatedotfun.git
    ```
 
 2. Install Bun:
-
    ```bash
    curl -fsSL https://bun.sh/install | bash && echo 'export PATH="$HOME/.bun/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
    ```
 
 3. Install dependencies:
-
    ```bash
    bun install
    ```
 
 4. Run the development server:
-
    ```bash
    bun run dev
    ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📝 Environment Variables
+
+Create a `.env.local` file in the root directory and add any required environment variables.
 
 ## 🤝 Contributing
 
