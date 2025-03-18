@@ -738,7 +738,7 @@ export default function Home() {
                   />
                 </div>
                 <Link
-                  href="https://fundraising.news"
+                  href="https://t.me/cryptofundraise"
                   target="_blank"
                   className="flex flex-col items-center md:items-start relative z-10"
                 >
@@ -796,7 +796,6 @@ export default function Home() {
                   </span>
                 </Link>
               </div>
-
               <div className="p-4 pb-8 md:p-8 md:border-r relative max-w-[300px] overflow-hidden mx-auto">
                 <div className="absolute right-0 bottom-0 opacity-20 backdrop-blur-md bg-white/50 rounded-full p-4">
                   <Podcast
@@ -831,6 +830,115 @@ export default function Home() {
                     #publicgoods
                   </span>
                 </Link>
+                
+              </div>
+              <div className="p-4 pb-8 md:p-8 md:border-r relative max-w-[300px] overflow-hidden mx-auto">
+                <div className="absolute right-0 bottom-0 opacity-20 backdrop-blur-md bg-white/50 rounded-full p-4">
+                  <Podcast
+                    className="w-48 h-48 text-white"
+                    style={{
+                      filter:
+                        "drop-shadow(0 1.87px 4.68px rgba(193, 146, 76, 0.8))",
+                      transform: "rotate(-45deg)",
+                    }}
+                  />
+                </div>
+                <Link
+                  href="https://t.me/solana_digest"
+                  target="_blank"
+                  className="flex flex-col items-center md:items-start relative z-10"
+                >
+                  <div className="flex items-start gap-2 mb-4">
+                    <Image
+                      src="/assets/images/communities/solana.jpg"
+                      alt="Solana Digest"
+                      width={32}
+                      height={32}
+                      className="rounded-full"
+                      unoptimized
+                    />
+                    <h3 className="text-2xl font-bold">Solana Digest</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4 text-center md:text-left">
+                    Solana ecosystem news
+                  </p>
+                  <span className="inline-block px-3 py-1 bg-gray-800 text-white rounded-md text-sm">
+                    #publicgoods
+                  </span>
+                </Link>
+                
+              </div>
+              <div className="p-4 pb-8 md:p-8 md:border-r relative max-w-[300px] overflow-hidden mx-auto">
+                <div className="absolute right-0 bottom-0 opacity-20 backdrop-blur-md bg-white/50 rounded-full p-4">
+                  <Podcast
+                    className="w-48 h-48 text-white"
+                    style={{
+                      filter:
+                        "drop-shadow(0 1.87px 4.68px rgba(193, 146, 76, 0.8))",
+                      transform: "rotate(-45deg)",
+                    }}
+                  />
+                </div>
+                <Link
+                  href="https://stablecoins.press"
+                  target="_blank"
+                  className="flex flex-col items-center md:items-start relative z-10"
+                >
+                  <div className="flex items-start gap-2 mb-4">
+                    <Image
+                      src="/assets/images/communities/StablecoinsPressLogo.png"
+                      alt="stablecoins.press"
+                      width={32}
+                      height={32}
+                      className="rounded-full"
+                      unoptimized
+                    />
+                    <h3 className="text-2xl font-bold">stablecoins.press</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4 text-center md:text-left">
+                    Premier stablecoin news
+                  </p>
+                  <span className="inline-block px-3 py-1 bg-gray-800 text-white rounded-md text-sm">
+                    #stablecoins
+                  </span>
+                </Link>
+                
+              </div>
+              <div className="p-4 pb-8 md:p-8 md:border-r relative max-w-[300px] overflow-hidden mx-auto">
+                <div className="absolute right-0 bottom-0 opacity-20 backdrop-blur-md bg-white/50 rounded-full p-4">
+                  <Podcast
+                    className="w-48 h-48 text-white"
+                    style={{
+                      filter:
+                        "drop-shadow(0 1.87px 4.68px rgba(193, 146, 76, 0.8))",
+                      transform: "rotate(-45deg)",
+                    }}
+                  />
+                </div>
+                <Link
+                  href="https://t.me/eigennews"
+                  target="_blank"
+                  className="flex flex-col items-center md:items-start relative z-10"
+                >
+                  <div className="flex items-start gap-2 mb-4">
+                    <Image
+                      src="/assets/images/communities/EigenLayer.png"
+                      alt="Eigen News"
+                      width={32}
+                      height={32}
+                      className="rounded-full"
+                      unoptimized
+                    />
+                    <h3 className="text-2xl font-bold">Eigen News</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4 text-center md:text-left">
+                    Restaking news, Eigen Layer ecosystem
+                  </p>
+                  <span className="inline-block px-3 py-1 bg-gray-800 text-white rounded-md text-sm">
+                    #eigen
+                  </span>
+                </Link>
+                
               </div>
             </div>
           </div>
