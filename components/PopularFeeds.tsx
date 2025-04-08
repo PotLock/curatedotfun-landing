@@ -25,7 +25,7 @@ const fetchFeeds = async (): Promise<Feed[]> => {
   // Determine the API URL based on environment
   const baseUrl =
     process.env.NODE_ENV === "production"
-      ? "https://curatedotfun-floral-sun-1539.fly.dev"
+      ? "https://app.curate.fun"
       : "http://localhost:3000";
 
   const response = await fetch(`${baseUrl}/api/config/feeds`);
