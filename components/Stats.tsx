@@ -1,3 +1,4 @@
+import { apiUrl } from "@/pages";
 import { useQuery } from "@tanstack/react-query";
 
 // Define the stats data structure to match the backend API
@@ -12,13 +13,7 @@ interface StatsData {
  * Fetches stats from the API
  */
 const fetchStats = async (): Promise<StatsData> => {
-  // Determine the API URL based on environment
-  const baseUrl =
-    process.env.NODE_ENV === "production"
-      ? "https://curatedotfun-floral-sun-1539.fly.dev"
-      : "http://localhost:3000";
-
-  const response = await fetch(`${baseUrl}/api/stats`);
+  const response = await fetch(`${apiUrl}/api/stats`);
 
   if (!response.ok) {
     throw new Error(`Failed to fetch stats: ${response.status}`);

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { FaCheck, FaCopy } from "react-icons/fa";
+import { apiUrl } from "@/pages";
 
 // Define the HashtagButton type
 type HashtagButton = {
@@ -22,13 +23,7 @@ interface Feed {
  * Fetches feeds from the API
  */
 const fetchFeeds = async (): Promise<Feed[]> => {
-  // Determine the API URL based on environment
-  const baseUrl =
-    process.env.NODE_ENV === "production"
-      ? "https://app.curate.fun"
-      : "http://localhost:3000";
-
-  const response = await fetch(`${baseUrl}/api/config/feeds`);
+  const response = await fetch(`${apiUrl}/api/config/feeds`);
 
   if (!response.ok) {
     throw new Error(`Failed to fetch feeds: ${response.status}`);

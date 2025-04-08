@@ -151,6 +151,10 @@ const PARTNERS = [
   },
 ];
 
+export const apiUrl = process.env.NODE_ENV === "production"
+  ? "https://app.curate.fun"
+  : "http://localhost:3000";
+
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-white w-[100vw]">
