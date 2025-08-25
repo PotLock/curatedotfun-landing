@@ -152,10 +152,7 @@ const PARTNERS = [
   },
 ];
 
-export const apiUrl =
-  process.env.NODE_ENV === "production"
-    ? "https://app.curate.fun"
-    : "http://localhost:3000";
+export const apiUrl = "https://app.curate.fun";
 
 export default function Home() {
   return (

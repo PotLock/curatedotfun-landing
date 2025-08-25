@@ -15,21 +15,33 @@ interface Feed {
   id: string;
   name: string;
   description: string;
-  moderation?: any;
-  outputs?: any;
+  createdBy: string | null;
+  admins: string[];
+  config: {
+    id: string;
+    name: string;
+    description: string;
+    image?: string;
+    enabled: boolean;
+    moderation: any;
+    outputs: any;
+  };
+  createdAt: string;
+  updatedAt: string;
 }
 
 /**
  * Fetches feeds from the API
  */
 const fetchFeeds = async (): Promise<Feed[]> => {
-  const response = await fetch(`${apiUrl}/api/config/feeds`);
+  const response = await fetch(`${apiUrl}/api/feeds`);
 
   if (!response.ok) {
     throw new Error(`Failed to fetch feeds: ${response.status}`);
   }
 
-  return await response.json();
+  const result = await response.json();
+  return result.data || [];
 };
 
 const HashtagButton = ({ tag, isActive, onClick }: HashtagButton) => {
@@ -78,7 +90,7 @@ const HashtagButton = ({ tag, isActive, onClick }: HashtagButton) => {
       {mounted && isActive && (
         <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg p-3 shadow-lg z-50 whitespace-nowrap">
           <div className="flex items-center gap-2">
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-600 font-mono">
               !submit @curatedotfun #{tag}
             </p>
             <button
@@ -130,8 +142,13 @@ const PopularFeeds = () => {
           <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center">
             Popular Feeds
           </h2>
-          <div className="flex justify-center">
-            <p>Loading feeds...</p>
+          <div className="flex flex-wrap gap-3 md:gap-4 justify-center">
+            {[...Array(8)].map((_, i) => (
+              <div
+                key={i}
+                className="px-4 py-2 rounded-lg bg-gray-200 animate-pulse h-10 w-20"
+              />
+            ))}
           </div>
         </div>
         <div className="w-full border-t border-black"></div>
@@ -165,16 +182,16 @@ const PopularFeeds = () => {
         </h2>
 
         <div className="flex flex-wrap gap-3 md:gap-4 justify-center">
-          {feeds?.map((feed) => (
+          {feeds && Array.isArray(feeds) && feeds.map((feed) => (
             <HashtagButton
               key={feed.id}
-              tag={feed.id.replace("#", "")}
-              isActive={activeHashtag === feed.id.replace("#", "")}
+              tag={feed.id}
+              isActive={activeHashtag === feed.id}
               onClick={() =>
                 setActiveHashtag(
-                  activeHashtag === feed.id.replace("#", "")
+                  activeHashtag === feed.id
                     ? ""
-                    : feed.id.replace("#", ""),
+                    : feed.id,
                 )
               }
             />
