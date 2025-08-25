@@ -182,20 +182,18 @@ const PopularFeeds = () => {
         </h2>
 
         <div className="flex flex-wrap gap-3 md:gap-4 justify-center">
-          {feeds && Array.isArray(feeds) && feeds.map((feed) => (
-            <HashtagButton
-              key={feed.id}
-              tag={feed.id}
-              isActive={activeHashtag === feed.id}
-              onClick={() =>
-                setActiveHashtag(
-                  activeHashtag === feed.id
-                    ? ""
-                    : feed.id,
-                )
-              }
-            />
-          ))}
+          {feeds &&
+            Array.isArray(feeds) &&
+            feeds.map((feed) => (
+              <HashtagButton
+                key={feed.id}
+                tag={feed.id}
+                isActive={activeHashtag === feed.id}
+                onClick={() =>
+                  setActiveHashtag(activeHashtag === feed.id ? "" : feed.id)
+                }
+              />
+            ))}
         </div>
       </div>
 

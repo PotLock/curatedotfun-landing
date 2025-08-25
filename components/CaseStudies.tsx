@@ -63,7 +63,8 @@ const caseStudiesData = [
     imageSrc: "/assets/images/communities/desciunderground.jpg",
     imageAlt: "DeSci Underground",
     title: "DeSci Underground",
-    description: "The Hub for everything Decentralized Science by DeSci Underground",
+    description:
+      "The Hub for everything Decentralized Science by DeSci Underground",
     hashtag: "#desci",
     icon: <Podcast className="w-4 h-4 text-gray-400" />,
   },
@@ -72,7 +73,8 @@ const caseStudiesData = [
     imageSrc: "/assets/images/communities/networkstatenews.jpg",
     imageAlt: "Network State News",
     title: "Network State News",
-    description: "Network states, popup cities, builder residencies; events, thought leaderships, policy updates, new communities, new tools.",
+    description:
+      "Network states, popup cities, builder residencies; events, thought leaderships, policy updates, new communities, new tools.",
     hashtag: "#networkstate",
     icon: <Podcast className="w-4 h-4 text-gray-400" />,
   },
@@ -90,7 +92,8 @@ const caseStudiesData = [
     imageSrc: "/assets/images/communities/opensocial.jpg",
     imageAlt: "Open Social",
     title: "Open Social",
-    description: "The feed for everything decentralized social, social graphs, open socials, socialFI + more",
+    description:
+      "The feed for everything decentralized social, social graphs, open socials, socialFI + more",
     hashtag: "#web3social",
     icon: <Gift className="w-4 h-4 text-gray-400" />,
   },
@@ -135,7 +138,8 @@ const caseStudiesData = [
     imageSrc: "/assets/images/communities/basedreporter.jpg",
     imageAlt: "Based Reporter",
     title: "Based Reporter",
-    description: "The #1 reporter on Base's l2 Ecosystem. builder updates, product updates, ecosystem news, and so much more",
+    description:
+      "The #1 reporter on Base's l2 Ecosystem. builder updates, product updates, ecosystem news, and so much more",
     hashtag: "#base",
     icon: <Gift className="w-4 h-4 text-gray-400" />,
   },
@@ -154,7 +158,8 @@ const caseStudiesData = [
     imageSrc: "/assets/images/communities/arbitrumintern.jpg",
     imageAlt: "Arbitrum Intern",
     title: "Arbitrum Intern",
-    description: "The #1 reporter on Arbitrum's l2 Ecosystem. builder updates, product updates, ecosystem news, and so much more",
+    description:
+      "The #1 reporter on Arbitrum's l2 Ecosystem. builder updates, product updates, ecosystem news, and so much more",
     hashtag: "#arbitrum",
     icon: <Gift className="w-4 h-4 text-gray-400" />,
   },
