@@ -130,7 +130,7 @@ const caseStudiesData = [
     imageAlt: "Crypto Fundraising",
     title: "Crypto Fundraises",
     description: "Open database & API for crypto fundraising announcements",
-    hashtag: "#fundraising",
+    hashtag: "#cryptofundraise",
     icon: <Gift className="w-4 h-4 text-gray-400" />,
   },
   {
